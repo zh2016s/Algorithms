@@ -1,7 +1,6 @@
 package com.zh2016s.algorithms.chapter1_4;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;

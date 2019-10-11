@@ -2,6 +2,7 @@ package com.zh2016s.algorithms.chapter1_4;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -30,6 +31,13 @@ public class ThreeSumFast {
 				list.add(sc.nextInt());
 			int[] nums = list.stream().mapToInt(Integer::valueOf).toArray();
 			System.out.println(count(nums));
+			sc.close();
+			try {
+				is.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
